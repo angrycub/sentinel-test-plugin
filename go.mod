@@ -1,6 +1,6 @@
 module github.com/angrycub/sentinel-test-plugin
 
-go 1.21
+go 1.22.3
 
 require github.com/hashicorp/sentinel-sdk v0.3.13
 
