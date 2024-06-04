@@ -8,8 +8,8 @@ import (
 
 func main() {
 	rpc.Serve(&rpc.ServeOpts{
-		ImportFunc: func() sdk.Import {
-			return &framework.Import{Root: &root{}}
+		PluginFunc: func() sdk.Plugin {
+			return &framework.Plugin{Root: &root{}}
 		},
 	})
 }
